@@ -1,0 +1,3 @@
+git remote add origin https://github.com/Tw103/Tw103.github.io.git
+git branch -M main
+git push -u origin main
