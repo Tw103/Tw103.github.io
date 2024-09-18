@@ -6,3 +6,12 @@ body {
     color: [red];
     text-align: center;
     }
+    body {
+        background: #120101;
+        font-family:"Times New Roman", Times, serif;
+        margin: 40px;
+        }
+        h1 {
+        text-align: center;
+        color: #f90000;
+        }
