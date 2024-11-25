@@ -25,7 +25,7 @@ body {
 
 /* Body Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
@@ -35,15 +35,15 @@ body {
 /* Header Styling */
 h1 {
   text-align: center;
-  color: #4a4a4a;
-  margin-bottom: 20px;
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
 
 h2 {
-  color: #2c3e50;
+  color: #34495e;
   margin-top: 20px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #eaeaea;
-  padding-bottom: 5px;
 }
 
 /* Paragraph Styling */
@@ -58,12 +58,13 @@ p {
 }
 
 .about img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
-  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Skills Section Styling */
+/* Skills Section */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -71,14 +72,22 @@ p {
   margin: 20px 0;
 }
 
-/* Projects Section Styling */
+.skills div {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Projects Section */
 .projects {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Individual Project Section */
 .project {
   background-color: #fff;
   border: 1px solid #eaeaea;
@@ -102,15 +111,25 @@ a {
   color: #2980b9;
 }
 
-/* Contact Section */
-.contact {
-  margin-top: 40px;
+a:hover {
+  text-decoration: underline;
 }
 
-/* Responsive Styling */
+/* Footer and Contact Section */
+.contact {
+  margin-top: 40px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Responsive Design */
  (max-width: 768px) {
   .skills {
       flex-direction: column;
       align-items: center;
+  }
+  
+  .project {
+      padding: 10px;
   }
 }
