@@ -73,8 +73,8 @@ p {
 }
 
 .skills div {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
+  background-color: #000000;
+  border: 1px solid #ff0000f7;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -89,8 +89,8 @@ p {
 }
 
 .project {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
+  background-color: #000000;
+  border: 1px solid #ff0000f7;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -102,13 +102,13 @@ p {
 }
 
 .project h3 {
-  color: #2980b9;
+  color: #ffffff;
 }
 
 /* Link Styling */
 a {
   text-decoration: none;
-  color: #2980b9;
+  color: #ffffff;
 }
 
 a:hover {
