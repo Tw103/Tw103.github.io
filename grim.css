@@ -1,20 +1,4 @@
-body {
-    background: [black];
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-    }
-    h1 {
-    color: [red];
-    text-align: center;
-    }
-    body {
-        background: #02000b;
-        font-family:"Times New Roman", Times, serif;
-        margin: 40px;
-        }
-        h1 {
-        text-align: center;
-        color: #f90000;
-        }
+
 /* Basic Reset */
 * {
   margin: 0;
