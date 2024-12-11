@@ -18,7 +18,7 @@ body {
 h1 {
   text-align: center;
   color: #ff1a1a; /* Bright red */
-  font-size: 2.5em;
+  font-size: 2.5em; /* Adjust size */
   font-weight: bold;
   text-shadow: 2px 2px 5px #000; /* Text shadow for gothic effect */
   margin-bottom: 20px;
@@ -64,18 +64,21 @@ p {
 /* Projects Section Styling */
 .projects {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-wrap: wrap; /* Allow projects to wrap */
+  justify-content: space-between; /* Distribute spacing */
+  gap: 20px; /* Space between items */
 }
 
 /* Individual Project Section */
 .project {
   background-color: #333; /* Dark gray background */
   border: 1px solid #ff1a1a; /* Red border */
-  padding: 15px;
+  padding: 10px; /* Reduced padding */
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s, box-shadow 0.3s; /* Add transitions */
+  width: calc(30% - 20px); /* Set width for three columns with gap adjustment */
+  position: relative; /* For the pseudo-element */
 }
 
 .project:hover {
@@ -84,7 +87,7 @@ p {
 }
 
 .project img {
-  max-width: 100%;
+  max-width: 100%; /* Responsive images */
   border-radius: 5px;
 }
 
@@ -130,13 +133,19 @@ a:hover {
 }
 
 /* Responsive Styling */
+@media (max-width: 1200px) {
+  .project {
+    width: calc(45% - 20px); /* Two columns */
+  }
+}
+
 @media (max-width: 768px) {
-  .skills {
-    flex-direction: column;
-    align-items: center;
+  .project {
+    width: calc(100% - 20px); /* Single column */
   }
 
-  .projects {
-    flex-direction: column; /* Stack projects on smaller screens */
+  .skills {
+    flex-direction: column; /* Stack skills vertically */
+    align-items: center; /* Center aligned */
   }
 }
