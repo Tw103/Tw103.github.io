@@ -1,102 +1,71 @@
-body {
-  background: [black];
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-  }
-  h1 {
-  color: [red];
-  text-align: center;
-  }
-  body {
-      background: #02000b;
-      font-family:"Times New Roman", Times, serif;
-      margin: 40px;
-      }
-      h1 {
-      text-align: center;
-      color: #f90000;
-      }
-/* Basic Reset */
+/* Reset margins and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Basic body styles */
 body {
-  font-family: 'Garamond', serif;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
   line-height: 1.6;
-  background-color: #1a1a1a; /* Dark background */
-  color: #f2f2f2; /* Light text */
-  padding: 20px;
 }
 
-/* Header Styling */
-h1 {
-  text-align: center;
-  color: #ff1a1a; /* Bright red */
-  font-size: 2.5em;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px #000; /* Text shadow for gothic effect */
-  margin-bottom: 20px;
+/* Header styles */
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
 }
 
-h2 {
-  color: #ff1a1a; /* Bright red */
-  margin-top: 20px;
-  border-bottom: 2px solid #f2f2f2;
-  padding-bottom: 5px;
-  font-size: 1.8em;
-  text-shadow: 1px 1px 3px #000;
+nav ul {
+  list-style-type: none;
 }
 
-/* Paragraph Styling */
-p {
-  margin-bottom: 15px;
-  font-size: 1.1em;
+nav ul li {
+  display: inline;
+  margin-right: 15px;
 }
 
-/* About Section */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* About section styles */
 .about {
-  text-align: center;
+  background: white;
+  padding: 20px;
   margin: 20px 0;
-}
-
-.about img {
-  max-width: 80%;
-  height: auto;
-  border: 2px solid #ff1a1a; /* Red border */
   border-radius: 5px;
 }
 
-/* Skills Section Styling */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 20px 0;
+/* Skills section styles */
+#skills ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-/* Projects Section Styling */
+/* Project section styles */
 .projects {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* Individual Project Section */
 .project {
-  background-color: #333; /* Dark gray background */
-  border: 1px solid #ff1a1a; /* Red border */
-  padding: 15px;
+  background: white;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s, box-shadow 0.3s; /* Add transitions */
-}
-
-.project:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  margin: 10px;
+  padding: 10px;
+  width: calc(33% - 20px);
+  transition: transform 0.2s;
 }
 
 .project img {
@@ -104,31 +73,17 @@ p {
   border-radius: 5px;
 }
 
-.project h3 {
-  color: #ff1a1a; /* Bright red */
-  text-shadow: 1px 1px 3px #000;
+.project:hover {
+  transform: scale(1.05);
 }
 
-/* Link Styling */
-a {
-  text-decoration: none;
-  color: #ff1a1a; /* Bright red */
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #f39c12; /* Change color on hover */
-}
-
-/* Contact Section */
-.contact {
-  margin-top: 40px;
-}
-
-/* Responsive Styling */
-   (max-width: 768px) {
-  .skills {
-      flex-direction: column;
-      align-items: center;
-  }
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4CAF50;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
